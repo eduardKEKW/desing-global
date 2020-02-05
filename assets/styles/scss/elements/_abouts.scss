@@ -1,0 +1,22 @@
+.about {
+    position: relative;
+    margin: 1.5rem;
+    
+    img {
+        width: 20rem;
+        height: 10rem;
+        border: solid 1rem $color-blue;
+        object-fit: cover;
+    }
+
+    &__title {
+        transition: .2s top ease;
+        position: absolute;
+        top: 0%;
+        left: 10%;
+    }
+
+    &:hover &__title {
+        top: 40%;
+    }
+}

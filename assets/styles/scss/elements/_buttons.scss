@@ -1,0 +1,108 @@
+.btn {
+    outline: none; 
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    color: $color-white;
+
+    &--blue {
+        background-color: $color-blue;
+    }
+
+    &--blue-ligth {
+        background-color: $color-blue-ligth;
+    }
+    
+    &--pink {
+        background-color: $color-pink;
+    }
+
+
+}
+
+
+.btn-next {
+    @include uppercase();
+    text-align: center;
+    position: relative;
+
+    &__icon {
+        padding: 1rem;
+        font-size: 2.5rem;
+        position: absolute;
+        transform: translateY(-4.2rem);
+        left: 90%;
+    }
+
+    &::after {
+        content: "";
+        mix-blend-mode: screen;
+        position: absolute;
+        top: 0px;
+        left: 30%;
+        width: 110%;
+        height: 100%;
+        background-color: $color-blue;
+        transition: .4s left ease, .4s width ease;
+    }
+
+    &:hover {
+        &::after {
+            left: 0%;
+            width: 140%;
+        }
+    }
+
+}
+
+.btn-empty {
+    @include uppercase();
+
+    &::after {
+        content: none;
+    }
+}
+
+.btn-full {
+    @include uppercase();
+    text-align: center;
+    background-color: $color-blue;
+    z-index: 10;
+}
+
+.btn-toggle {
+    transition: .4s border ease, .4s background-color ease;
+    border: solid .2rem $color-white;
+    padding: .5rem;
+
+    &:focus {
+        background-color: $color-blue;
+        border: solid .2rem $color-blue;
+    }
+
+    &:focus &__icon {
+        transition: .4s transform ease;
+        visibility: visible;
+        transform: scale(1,1);
+    }
+
+    &__icon {
+        display: inline-block;
+        transform: scale(0,0);
+    }
+
+}
+
+.btn-toggle--selected {
+    background-color: $color-blue;
+    border: solid .2rem $color-blue;
+
+    &__icon {
+        transition: .4s transform ease;
+        visibility: visible;
+        transform: scale(1,1);
+    }
+}

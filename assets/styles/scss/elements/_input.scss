@@ -1,0 +1,31 @@
+.input {
+    outline: none;
+    position: relative;
+    border: none;
+    color: $color-white;
+    background-color: transparent;
+    border-bottom: solid 1px $color-white;
+    letter-spacing: .1rem;
+    font-size: 2rem;
+    padding: .5rem;
+    margin: 1rem;
+
+    &:focus + label {
+        font-size: 1rem;
+        top: -.5rem;
+        left: 1.4rem;
+    }
+
+    & + label {
+        transition: .3s top ease, .3s font-size ease;
+        position: absolute;
+        font-size: 2rem;
+        top: 0;
+        left: 1.4rem;
+    }
+    
+}
+
+.input-box {
+    position: relative;
+}

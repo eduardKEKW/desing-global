@@ -1,0 +1,25 @@
+.modal {
+    background-color: $background-color;
+    box-shadow: -4px 6px 28px 2px rgba(0,0,0,0.75);
+    width: 30rem;
+    height: 40rem;
+    text-align: center;
+    padding: 2rem;
+
+    p {
+        margin: 1.5rem;
+    }
+
+    &__item {
+        @include center();
+        width: 100%;
+        height: 15%;
+        margin-top: 1rem;
+    }
+
+    &__btn {
+        width: 12rem;
+        height: 4rem;
+    }
+
+}

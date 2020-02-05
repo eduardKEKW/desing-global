@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Global</title>
+
+    <link rel="stylesheet" href="/assets/styles/css/main.min.css">
+    <script src="/assets/js/main.js" defer></script>
+</head>
+<body>
+
+    <div class="navigation" id='navigation'>
+        <div class='navigation__content'>
+            <ul class='navigation__list'>
+                <li name = 'home' id='home-nav' class='navigation__selected'>Home</li>
+                <li name = 'works' id='works-nav'>Works</li>
+                <li name = 'about' id='about-nav'>About</li>
+                <li name = 'contact' id='contact-nav'> Contact</li>
+                <li name = 'hire' id='hire-nav'>Hire us</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class='perspective perspective--hide' id='perspective'>
+
+        <div class='side'>
+            <ul class="side__list txt-main">
+                <li name='home' id='home' class='side__list-item side__list-item--focus'>Home</li>
+                <li name='works' id='works' class='side__list-item'>Works</li>
+                <li name='about' id='about' class='side__list-item'>About</li>
+                <li name='contact' id='contact' class='side__list-item'>Contact</li>
+                <li name='hire' id='hire' class='side__list-item'>Hire us</li>
+            </ul>
+        </div>
+
+
+        <div class='pages--hide' id ='page'>
+            <div class='header'>
+                <div class='header__logo'>
+                    <img src="./assets/img/logo.png" alt="Global">
+                    <h1>Global</h1>
+                </div>
+
+                <div class='header__navigation' id="navigation-btn">
+                    <div class="header__navigation">
+                        <div class="header__navigation-icon">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class='page-container'>
+
+                <div class='page-home page-container__show' id='home-page'>
+                    <div class="intro">
+                        <div class='row intro__separate'>
+                            <div class='col-6 txt-main--huge intro__title'>
+                                Your next
+                                <br>
+                                interactive
+                                <br>
+                                experience
+                            </div>
+                            <div class='col-6 intro__img'>
+                                <img src="assets/img/introduction-visual.png" alt="astronaut">
+                            </div>
+                            <div class="intro__btn">
+                                <button class="btn btn-next" id='hire-btn'>
+                                    HIRE US
+                                    <div class="btn-next__icon">
+                                        &rarr;
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="row txt-main intro__info-container">
+                            <a class="col-4" href="#">
+                                <div class='intro__info'>
+                                    <h2>METIEW & SMITH</h2>
+                                    <p>Lorem ipsum dolor si consectetur. Possimus magnam magni?</p>
+                                </div>
+                            </a>
+                            <a class="col-4" href="#">
+                                <div class='intro__info'>
+                                    <h2>Fantasy interactive</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                                </div>
+                            </a>
+                            <a class="col-4" href="#">
+                                <div class='intro__info'>
+                                    <h2>Paul & shark</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>    
+
+
+                <div class='page-works page-container__hide' id='works-page'>
+                    <div class="page-container__btn">
+                        <button class="btn btn-full" id='hire-btn'>
+                            hire us
+                        </button>
+                    </div>
+                    <div class='slider'>
+                        <div class="slider__title txt-main txt-main--large">
+                            Selected work
+                        </div>
+                        <div class="row">
+                            <div class="col-1 slider__side">
+                                <div class="slider__btn" name="left">
+                                    &larr;
+                                </div>
+                            </div>
+                            <div class='row slider__content'>
+                                
+                                <div class="slider__content-slide">
+                                    <div class="slider__item">
+                                        <div class='round'>
+                                            <div class='round__img'>
+                                                <img src="/assets/img/work-alex-nowak.jpg" alt="work-alex-nowak">
+                                            </div>
+                                            <div class="round__title txt-main--medium">
+                                                ALEX NOAX
+                                            </div>
+                                            <div class="round__content">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="slider__item slider__item--selected">
+                                        <div class='round round-selected'>
+                                            <div class='round__img'>
+                                                <img src="/assets/img/work-victory.jpg" alt="work-victory">
+                                            </div>
+                                            <div class="round__title txt-main--medium">
+                                                VICTORY
+                                            </div>
+                                            <div class="round__content">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="slider__item">
+                                        <div class='round'>
+                                            <div class='round__img'>
+                                                <img src="/assets/img/work-metiew-smith.jpg" alt="work-metiew-smith">
+                                            </div>
+                                            <div class="round__title txt-main--medium">
+                                                METWE & SMITH
+                                            </div>
+                                            <div class="round__content">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-1 slider__side">
+                                <div class="slider__btn" name="right">
+                                    &rarr;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-about page-container__hide" id='about-page'>
+                    <div class="page-container__btn">
+                        <button class="btn btn-full" id='hire-btn'>
+                            hire us
+                        </button>
+                    </div>
+                    
+                    <div class="page-about__content">
+                        <div class='row'>
+                            <div class="page-about__btn">
+                                <button class="btn btn-next btn-empty">
+                                    CAREERS
+                                    <div class="btn-next__icon">
+                                        &rarr;
+                                    </div>
+                                </button>
+                            </div>
+                        
+                            <div class="col-6 txt-main--huge page-about__title">
+                                We
+                                <br>
+                                belive <i class="txt-main--modify-1">in</i>
+                                <br>
+                                passionate
+                                <br>
+                                peopel <i class="txt-main--modify-2">.</i>
+                            </div>
+                            <div class="col-6 page-about__image">
+                                <img src="./assets/img/about-visual.png" alt="about-visual">
+                            </div>
+                        </div>
+                        <div class="row page-about__row">
+                            <div class='col-2'>
+                                <a href="#" class="about">
+                                    <img src="./assets/img/about-winners.jpg" alt="about-winners">
+                                    <h3 class="about__title">
+                                        winners
+                                    </h3>
+                                </a>
+                            </div>
+                            <div href="#" class="col-2">
+                                <a class="about">
+                                    <img src="./assets/img/about-philosophy.jpg" alt="about-philosophy">
+                                    <h3 class="about__title">
+                                        philosophy
+                                    </h3>
+                                </a>
+                            </div>
+                            <div href="#" class="col-2">
+                                <a class="about">
+                                    <img src="./assets/img/about-history.jpg" alt="about-history">
+                                    <h3 class="about__title">
+                                        winners
+                                    </h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-contact page-container__hide" id='contact-page'>
+                    <div class="page-contact__content">
+                        <div class="page-container__btn">
+                            <button class="btn btn-full" id='hire-btn'>
+                                hire us
+                            </button>
+                        </div>
+
+                            <div class="page-contact__side">
+                                <div class='modal'>
+                                    <p>Powia 5, 31-165 Krakow</p>
+                                    <p>ouremail@gmail.com</p>
+                                    <p>+48 12 628 75 65</p>
+                                    <div class="modal__item">
+                                        <div class="modal__btn">
+                                            <button class="btn btn--blue-ligth">
+                                                behance
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="modal__item">
+                                        <div class="modal__btn">
+                                            <button class="btn btn--blue">
+                                                dribbble
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="modal__item">
+                                        <div class="modal__btn thx-main--large">
+                                            <button class="btn btn--pink">
+                                                Contact Us
+                                            </button>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <div class="page-hire page-container__hide" id='hire-page'>
+                    <div class="txt-main--large page-hire__title m-2">
+                        You want us to do
+                    </div>
+                    <div class="page-hire__buttons m-2">
+                        
+                        <div class="page-hire__btn">
+                                <button class="btn btn-toggle txt-main--medium">
+                                    <div class="btn-toggle__icon">
+                                        &check;
+                                    </div>
+                                    App Design
+                                </button>
+                            </div>
+                            <div class="page-hire__btn">
+                                <button class="btn btn-toggle txt-main--medium">
+                                    <div class="btn-toggle__icon">
+                                        &check;
+                                    </div>
+                                    App Design
+                                </button>
+                            </div>
+                            <div class="page-hire__btn">
+                                <button class="btn btn-toggle txt-main--medium">
+                                    <div class="btn-toggle__icon">
+                                        &check;
+                                    </div>
+                                    App Design
+                                </button>
+                            </div>
+                            <div class="page-hire__btn">
+                                <button class="btn btn-toggle txt-main--medium">
+                                    <div class="btn-toggle__icon">
+                                        &check;
+                                    </div>
+                                    App Design
+                                </button>
+                            </div>
+                            <div class="page-hire__btn">
+                                <button class="btn btn-toggle txt-main--medium">
+                                    <div class="btn-toggle__icon">
+                                        &check;
+                                    </div>
+                                    App Design
+                                </button>
+                            </div>
+                            <div class="page-hire__btn page-hire__btn-full">
+                                <button class="btn btn-toggle txt-main--medium">
+                                    <div class="btn-toggle__icon">
+                                        &check;
+                                    </div>
+                                    App Design
+                                </button>
+                            </div>
+
+                    </div>
+
+                    <div class="page-hire__form">
+                        <form action="" class="form">
+                            <div class="row row--space m-4">
+                                <div class="input-box">
+                                    <input class="input txt-main--medium" type="text" name="name" id="name">
+                                    <label class="input-label" for="Name">Name</label>
+                                </div>
+        
+                                <div class="input-box">
+                                    <input class="input txt-main--medium" type="email" name="name" id="email">
+                                    <label class="input-label" for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="form__submit">
+                                <button class='btn btn-full' type="submit">SEND REQUEST</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+.intro {
+    width: 100%;
+
+    &__title {
+        padding: 5rem 0 0 5rem;
+
+        @include for-size(tablet) {
+            padding: 0;
+            margin-bottom: 20rem;
+            padding: 5rem;
+            font-size: 6vh;
+            line-height: 6vh;
+            margin-left: 4rem;
+        }
+
+        @include for-size(phone){
+            padding: 0;
+            margin-left: 0;
+        }
+    }
+
+    &__separate {
+        position: relative;
+        border-bottom: solid 2px $color-grey;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 3%;
+            width: 3.5rem;
+            height: .4rem;
+            background-color: $color-blue;
+        }
+    }
+
+    &__img {
+        height: 45rem;
+        padding-right: 15%;
+        
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        @include for-size(tablet) {
+            display: none;
+        }
+    }
+
+    &__btn {
+        width: 8rem;
+        height: 3.5rem;
+        position: absolute;
+        top: 70%;
+        left: 4%;
+    }
+
+    &__info {
+        padding: 6%;
+        color: $color-grey;
+        transition: .3s color ease;
+
+        h2 {
+            @include uppercase();
+        }
+
+        p {
+            padding-top: 1rem;
+        }
+
+        &:hover {
+            color: $color-white;
+        }
+
+        @include for-size(tablet) {
+            padding: 3%;
+        }
+
+    }
+
+    &__info-container {
+        width: 100%;
+        display: flex;
+
+        @include for-size(tablet) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}

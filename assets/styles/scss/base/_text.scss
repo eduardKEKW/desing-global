@@ -1,0 +1,67 @@
+.txt-main {
+    font-size: 2vh;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+
+    &--huge {
+        font-weight: 900;
+        font-size: 8vh;
+        line-height: 8vh;
+    }
+
+    &--large{
+        font-weight: 900;
+        font-size: 5vh;
+        line-height: 5vh;
+    }
+
+    &--medium {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    &--small {
+        font-weight: 400;
+        font-size: 2vh;
+        line-height: 2vh;
+    }
+
+    &--modify-1 {
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 3rem;
+            height: 3rem;
+            background-color: $color-blue;
+            position: absolute;
+            top: -2%;
+            left: 10%;
+            border-radius: 50%;
+
+            @include for-size(phone) {
+                display: none;
+            }
+        }
+    }
+
+    &--modify-2 {
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: $color-blue;
+            position: absolute;
+            top: 55%;
+            left: 10%;
+
+            @include for-size(phone) {
+                display: none;
+            }
+        }
+    }
+
+}
