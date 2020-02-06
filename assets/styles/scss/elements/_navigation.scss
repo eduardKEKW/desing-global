@@ -1,57 +1,44 @@
 .navigation {
+    color: $color-white;
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    text-align: center;
+    visibility: hidden;
+    pointer-events: none;
+    overflow: hidden;
 
-    &__content {
-        color: $color-white;
-        position: absolute;
-        top: 10%;
-        left: 80%;
-        text-align: center;
-        visibility: hidden;
-        pointer-events: none;
+    @include for-size(tablet) {
+        top: 30%;
+        left: 55%;
+    }
 
-        @include for-size(tablet) {
-            top: 20%;
-            left: 70%;
-        }
-        
-        &--show {
-            visibility: visible;
-            pointer-events: all;
+    ul {
+        list-style: none;
 
-            ul {
-                li {
-                    transform: translate(-20rem,10rem);
-                }
+        li {
+            cursor: pointer;
+            position: relative;
+            text-transform: capitalize;
+            font-weight: 900;
+            font-size: 6rem;
+            margin-top: 1rem;
+            transition: .3s transform ease-out;
+            transform: translate(100%,-50%);
 
-                @for $i from 1 through 5 {
-                    li:nth-child(#{$i}) {
-                        transition-delay: $i * .04 + s;
-                    }
-                }
+            @include for-size(tablet) {
+                font-size: 4rem;
+                margin-top: .5rem;
             }
-        }
 
-        ul {
-            list-style: none;
-
-            li {
-                cursor: pointer;
-                position: relative;
-                text-transform: capitalize;
-                font-weight: 900;
-                font-size: 6rem;
-                margin-top: 1rem;
-                transition: .3s transform ease-out;
-
-                li::before {
-                    transition: .4s width; 
-                }
+            li::before {
+                transition: .4s width; 
             }
         }
     }
+    
 
     &__selected {
-
         &::before {
             content: "";
             position: absolute;
@@ -64,4 +51,21 @@
 
     }
 
+}
+
+.navigation--show {
+    visibility: visible;
+    pointer-events: all;
+
+    ul {
+        li {
+            transform: translate(0%,0%);
+        }
+
+        @for $i from 1 through 5 {
+            li:nth-child(#{$i}) {
+                transition-delay: $i * .04 + s;
+            }
+        }
+    }
 }

@@ -48,7 +48,7 @@ const onNavToggle = () => {
     perspective.classList.toggle("perspective--hide");
     perspective.classList.toggle("perspective--show");
 
-    nav.children[0].classList.toggle("navigation__content--show");
+    nav.classList.toggle("navigation--show");
 }
 
 let i = 2;

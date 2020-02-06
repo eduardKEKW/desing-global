@@ -14,10 +14,13 @@
     @include for-size (phone) {
       font-size: 40%;
     }
+
+    @include for-size (small-phone) {
+      font-size: 30%;
+    }
   }
   
   body {
-    overflow: hidden;
     color: $color-white;
     box-sizing: border-box;
     font-weight: 400;
