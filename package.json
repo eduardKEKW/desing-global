@@ -1,0 +1,31 @@
+{
+  "name": "global",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardKEKW/desing-global.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardKEKW/desing-global/issues"
+  },
+  "homepage": "https://github.com/eduardKEKW/desing-global#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "browserslist": "^4.8.7",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "precss": "^4.0.0"
+  }
+}

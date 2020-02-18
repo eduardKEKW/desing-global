@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,AAAC,CACH,WAAW,CAAE,kBAAkB,CAChC",
-    "sources": [
-        "../scss/base/fonsts.scss"
-    ],
-    "names": [],
-    "file": "fonsts.min.css"
-}
